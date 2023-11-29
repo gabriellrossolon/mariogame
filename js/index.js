@@ -1,6 +1,13 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
+const playMusic = () => {
+    let music = document.getElementById("backMusic");
+    if (music.paused) {
+        music.play();
+    }
+}
+
 const jump = () => {
     mario.classList.add('jump');
 
@@ -32,5 +39,10 @@ const loop = setInterval(() => {
 
 }, 10);
 
+
 document.addEventListener('keydown', jump);
-document.addEventListener('click', jump);
+document.addEventListener('click', jump,);
+document.addEventListener('click', playMusic);
+
+
+
