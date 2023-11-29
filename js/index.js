@@ -9,6 +9,12 @@ const playMusic = () => {
     }
 }
 
+function gameOverSound() {
+    let gameOverSound = document.getElementById("dieSound");
+    gameOverSound.volume = 0.2;
+    gameOverSound.play();
+}
+
 const startGame = () => {
     pipe.classList.remove('pipe-parado')
 
@@ -43,6 +49,8 @@ const loop = setInterval(() => {
         mario.style.marginLeft = '50px';
 
         clearInterval(loop);
+
+        gameOverSound();
 
     }
 
