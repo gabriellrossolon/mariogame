@@ -3,9 +3,18 @@ const pipe = document.querySelector('.pipe');
 
 const playMusic = () => {
     let music = document.getElementById("backMusic");
+    music.volume = 0.1;
     if (music.paused) {
         music.play();
     }
+}
+
+const startGame = () => {
+    pipe.classList.remove('pipe-parado')
+
+    setTimeout(() => {
+        pipe.classList.add('pipe-animation');
+    }, 0);
 }
 
 const jump = () => {
@@ -28,7 +37,7 @@ const loop = setInterval(() => {
 
         mario.style.animation = 'none'
         mario.style.bottom = `${marioPosition}px`;
-   
+
         mario.src= './images/game-over.png';
         mario.style.width = '75px';
         mario.style.marginLeft = '50px';
@@ -41,8 +50,10 @@ const loop = setInterval(() => {
 
 
 document.addEventListener('keydown', jump);
-document.addEventListener('click', jump,);
-document.addEventListener('click', playMusic);
-
+document.addEventListener('click', () => {
+    jump();
+    playMusic();
+    startGame();
+});
 
 

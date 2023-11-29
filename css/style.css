@@ -26,7 +26,15 @@
     position: absolute;
     bottom: -25px;
     width: 80px;
+    
+}
+
+.pipe-animation {
     animation: pipe-animation 1.5s infinite linear;
+}
+
+.pipe-parado {
+    left: -80px;
 }
 
 .mario {
