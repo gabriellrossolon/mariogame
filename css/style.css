@@ -90,3 +90,49 @@
         right: 100%;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .pipe-animation {
+        animation: pipe-animation 1.4s infinite linear;
+    }
+
+    .clouds {
+        animation: clouds-animation 5s infinite linear;
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 60px;
+        }
+        40% {
+            bottom: 180px;
+        }
+        48% {
+            bottom: 180px;
+        }
+        49% {
+            bottom: 180px;
+        }
+        50% {
+            bottom: 180px;
+        }
+        51% {
+            bottom: 180px;
+        }
+        52% {
+            bottom: 180px;
+        }
+        60% {
+            bottom: 180px;
+        }
+        70% {
+            bottom: 180px;
+        }
+        75% {
+            bottom: 180px;
+        }
+        100% {
+            bottom: 0px;
+        }
+    }
+}

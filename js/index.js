@@ -50,7 +50,7 @@ const jump = () => {
 
     setTimeout(() => {
         mario.classList.remove('jump');
-    }, 500);
+    }, 600);
 }
 
 let marioDied = false;
