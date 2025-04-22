@@ -25,7 +25,7 @@ O objetivo do jogador é **pular os canos** pressionando a tecla **Espaço** (`S
 ## ✨ Funcionalidades
 
 - Detecção de colisão em tempo real  
-- Animações suaves usando `requestAnimationFrame()`  
+- Animações suaves
 - Reinício automático ao perder  
 - Controles simples via teclado  
 - Personagem do Mario com sprites animados (ou estáticos, dependendo da versão)
