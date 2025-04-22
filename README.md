@@ -10,7 +10,7 @@ O objetivo do jogador é **pular os canos** pressionando a tecla **Espaço** (`S
 
 - Pressione **Espaço** para fazer o Mario pular  
 - Evite colidir com os canos que vêm da direita  
-- Ao colidir, o jogo exibe uma mensagem de "Game Over" e reinicia automaticamente
+- Ao colidir, o jogo exibe toca uma mensagem que sinaliza Game Over
 
 ---
 
@@ -28,7 +28,7 @@ O objetivo do jogador é **pular os canos** pressionando a tecla **Espaço** (`S
 - Animações suaves
 - Reinício automático ao perder  
 - Controles simples via teclado  
-- Personagem do Mario com sprites animados (ou estáticos, dependendo da versão)
+- Personagem do Mario com sprites animados
 
 ---
 
